@@ -24,11 +24,11 @@ public class GeradoraDeFigurinhas {
         BufferedImage novaImagem = new BufferedImage(largura, novaAltura, BufferedImage.TRANSLUCENT);
         
         // copiar a imagem original pra nova imagem (em memória)
-        Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();        novaImagem.getGraphics();
+        Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();        //novaImagem.getGraphics();
         graphics.drawImage(imagemOriginal, 0, 0, null);
         
         //configurar a fonte
-        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 100);
+        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 64);
         graphics.setColor(Color.YELLOW);
         graphics.setFont(fonte);
 
